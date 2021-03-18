@@ -3,7 +3,7 @@
 > A docker-compose setup for running [Postgres](https://www.postgresql.org/)
 > and [pgAdmin](https://www.pgadmin.org/)
 
-## Usage
+## Usage
 
 Run `docker-compose up --build` to start both Postgres and pgAdmin. After
 several seconds the pgAdmin web interface will be available on
