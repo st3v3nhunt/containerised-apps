@@ -7,7 +7,7 @@
 
 Run `docker-compose up --build` to start both Postgres and pgAdmin. After
 several seconds the pgAdmin web interface will be available on
-[localhost:5433](http://localhost:5433). Login with the credentials as
+[localhost:5431](http://localhost:5431). Login with the credentials as
 specified in [.env](.env).
 
 ### Connecting pgAdmin to DB
@@ -15,12 +15,12 @@ specified in [.env](.env).
 Once pgAdmin is running the connection to the DB can be made. Find the option
 to 'Add New Server'. A number of fields need to be completed:
 
-| Section    | Field               | Description                                    |
-| -------    | -----               | -----------                                    |
-| General    | Name                | Something useful like 'dev'                    |
-| Connection | Host name / address | The name of the container for `pg_db` in [docker-compose.yml](docker-compose.yml) -OR- the IP address of the container^1
-| Connection | Username            | Value of `POSTGRES_USER` from [.env](.env)     |
-| Connection | Password            | Value of `POSTGRES_PASSWORD` from [.env](.env) |
+| Section    | Field               | Description                                                                                                              |
+| -------    | -----               | -----------                                                                                                              |
+| General    | Name                | Something useful like 'dev'                                                                                              |
+| Connection | Host name / address | The name of the container for `pg_db` in [docker-compose.yml](docker-compose.yml) -OR- the IP address of the container^1 |
+| Connection | Username            | Value of `POSTGRES_USER` from [.env](.env)                                                                               |
+| Connection | Password            | Value of `POSTGRES_PASSWORD` from [.env](.env)                                                                           |
 
 NOTE:
 **^1** - the IP address of the container can be found by
